@@ -1,7 +1,9 @@
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaSquareXTwitter, FaPhone } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
 import "./Styles/contact.scss";
 import { LiaLinkedinIn } from "react-icons/lia";
+import Gmail from "../assets/skills/gmail.svg";
 
 function Contact() {
   return (
@@ -11,7 +13,7 @@ function Contact() {
           {" "}
           Connect with Me
         </h1>
-        <div className="flex flex-row flex-wrap justify-center gap-10">
+        <div className="flex flex-wrap social-footer gap-10">
           <a
             className="text-4xl"
             href="#"
@@ -29,12 +31,12 @@ function Contact() {
             <LiaLinkedinIn />
           </a>
           <a
-            className="text-4xl"
-            href="#"
+            className="text-3xl"
+            href="mailto:zmumuni.da@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaSquareXTwitter />
+            <img src={Gmail} alt="" />
           </a>
         </div>
       </div>
