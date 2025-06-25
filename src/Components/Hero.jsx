@@ -5,7 +5,6 @@ import "./Styles/hero.scss";
 import Me from "../assets/elisha.jpg";
 import { Link } from "react-scroll";
 import Text from "./Text";
-import cv from "../assets/Elisha-Adamu-Inuwa.pdf";
 
 function Hero() {
   const div1 = useRef(null);
