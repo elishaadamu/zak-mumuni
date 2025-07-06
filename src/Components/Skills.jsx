@@ -3,7 +3,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import "./Styles/skills.scss";
-import Me from "../assets/me.jpg";
 import css from "../assets/skills/css.png";
 import github from "../assets/skills/github.jpeg";
 import html from "../assets/skills/html.png";
@@ -104,10 +103,10 @@ function Skills() {
           x: 0,
           y: 0,
           opacity: 1,
-          ease: "back.out",
+          ease: "power1.out",
           scrollTrigger: {
             trigger: ref.current,
-            start: "top center",
+            start: "top 110%",
             end: "bottom center",
             scrub: true,
             toggleActions: "play none none none",
