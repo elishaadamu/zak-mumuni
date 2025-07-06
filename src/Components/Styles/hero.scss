@@ -63,12 +63,16 @@
           cursor: pointer;
           transition: 0.5s;
           font-weight: 600;
+          background: transparent;
+          text-decoration: none;
+          display: inline-block;
 
           &:hover {
             background: var(--primary-color);
             color: var(--bg-color);
           }
         }
+
         a {
           color: var(--bg-color);
           background: var(--primary-color);
@@ -161,6 +165,8 @@
         .btns {
           justify-content: center;
           margin-bottom: 1.7rem;
+          flex-wrap: wrap;
+          gap: 1rem;
         }
       }
 

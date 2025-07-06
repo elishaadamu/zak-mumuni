@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 import "./Styles/hero.scss";
@@ -6,12 +6,31 @@ import Me from "../assets/zak-mumuni.jpg";
 import { Link } from "react-scroll";
 import Resume from "../assets/zak-mumuni-resume.pdf"; // Adjust the path as necessary
 import Text from "./Text";
+import ResumeModal from "./ResumeModal";
 
 function Hero() {
   const div1 = useRef(null);
   const div2 = useRef(null);
+  const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
 
   const resumeLink = Resume;
+
+  const handleViewResume = () => {
+    setIsResumeModalOpen(true);
+  };
+
+  const handleCloseResumeModal = () => {
+    setIsResumeModalOpen(false);
+  };
+
+  const handleDownloadResume = () => {
+    const link = document.createElement("a");
+    link.href = resumeLink;
+    link.download = "Zak-Mumuni-Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   useEffect(() => {
     const timeline = gsap.timeline();
@@ -66,10 +85,9 @@ function Hero() {
 
           <div className="flex gap-5 justify-start ">
             <div className="btns">
-              <a href={resumeLink} target="_blank" download>
-                Resume
-              </a>
+              <button onClick={handleViewResume}>View Resume</button>
             </div>
+
             <div className="btns">
               <a href="mailto:zmumuni.da@gmail.com" target="_blank">
                 Contact
@@ -84,6 +102,12 @@ function Hero() {
           </div>
         </div>
       </div>
+
+      <ResumeModal
+        isOpen={isResumeModalOpen}
+        onClose={handleCloseResumeModal}
+        resumeUrl={resumeLink}
+      />
     </div>
   );
 }
