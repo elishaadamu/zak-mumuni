@@ -13,6 +13,8 @@ import bigquery from "../assets/skills/big-query.png";
 import sqlite from "../assets/skills/sqlite.jpeg";
 import react from "../assets/skills/react.png";
 import R from "../assets/skills/R.png";
+import AWS from "../assets/skills/aws.png";
+import Airflow from "../assets/skills/airflow.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -54,6 +56,14 @@ function Skills() {
     {
       skillImg: R,
       skillName: "R Language",
+    },
+    {
+      skillImg: AWS,
+      skillName: "AWS",
+    },
+    {
+      skillImg: Airflow,
+      skillName: "Airflow",
     },
   ];
 

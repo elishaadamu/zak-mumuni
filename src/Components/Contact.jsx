@@ -23,7 +23,7 @@ function Contact() {
             <FaGithub />
           </a>
           <a
-            href="#"
+            href="https://github.com/zakariDS"
             target="_blank"
             className="text-4xl"
             rel="noopener noreferrer"

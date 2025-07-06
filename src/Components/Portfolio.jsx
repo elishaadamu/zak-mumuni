@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import alvocine from "../assets/alvocine.png";
-import lifewithalacrity from "../assets/lifewithalacrity.png";
-import sportstechwest from "../assets/sportstechwest.png";
-import portfolio from "../assets/portfolio.png";
-import AYCreativeTech from "../assets/ay-creatives.png";
+import TS from "../assets/portfolio/ts.jpg";
+import clustering from "../assets/portfolio/clustering.jpg";
+import PCA from "../assets/portfolio/pca.jpg";
+import Classification from "../assets/portfolio/class.jpg";
+import Impact from "../assets/portfolio/impact.jpg";
+import Markov from "../assets/portfolio/markov.jpg";
 import "./Styles/portfolio.scss";
 import Project from "./Project";
 import { Link } from "react-scroll";
@@ -14,58 +15,54 @@ function Portfolio() {
 
   const works = [
     {
-      workImg: alvocine,
-      name: "alvocine",
+      workImg: TS,
+      name: "Time Series Forecasting",
       index: "01",
-      tags: [
-        "html",
-        "css",
-        "sass",
-        "javaScript",
-        "react",
-        "IMDB",
-        "react query",
-        "react player",
-      ],
-      link: "https://alvocine.netlify.app/",
-      github: "#",
-      features: [
-        "get movies list",
-        "watch movie trailer",
-        "search movies",
-        "get movie details",
-        "get upcoming movies",
-        "",
-      ],
-      description: `Alvocine: A dynamic movie recommendation application built with React. Alvocine provides users with personalized movie suggestions based on their preferences and viewing history. The application features a sleek and user-friendly interface, seamless navigation, and real-time updates to enhance the user experience. Integrated with external APIs, Alvocine offers a rich database of movies, including detailed information and reviews. This project demonstrates strong skills in React development, API integration, and UI/UX design.`,
+
+      link: "https://github.com/zakariDS/portfolio/blob/main/DS_forecasting.ipynb",
+      description:
+        "Predicted future freeway traffic congestion using LSTM and SARIMA models for St. Louis, Missouri Metropolitan Area. ",
     },
     {
-      workImg: lifewithalacrity,
-      name: "Life with Alacrity",
+      workImg: clustering,
+      name: "Clustering",
       index: "02",
-      tags: ["html", "css", "sass", "javaScript", "jekyll", "Ruby"],
-      link: "https://www.lifewithalacrity.com/",
-      github: "https://github.com/lifewithalacrity/www.LifeWithAlacrity.com",
-      features: ["Blog", "Archive", "Security Architecture"],
-      description: `Life with Alacrity is the personal blog of Christopher Allen, covering topics of community, decentralized identity, collective choice, online privacy, and more. `,
+
+      link: "https://github.com/zakariDS/portfolio/blob/main/DS_clustering_Analysis.ipynb",
+      description:
+        "I used k-means clustering to analyze the concentration  of socio-economically disadvantaged groups in Honolulu, Hawaii Metropolitan Area.",
     },
     {
-      workImg: sportstechwest,
-      name: "Sports Tech West",
+      workImg: PCA,
+      name: "Principal Components Analysis",
       index: "03",
-      tags: [
-        "html",
-        "css",
-        "sass",
-        "javaScript",
-        "jekyll",
-        "firebase",
-        "redux",
-      ],
-      link: "https://sportstechwest.com/",
-      github: "https://github.com/rashadwest/Sportstechwest",
-      features: ["Sports", "Athletic", "Digital"],
-      description: `SportsTechWest, a blog exploring the journey from professional athlete to sports tech vagabonder. Join us in discovering the global intersection of sports and technology.`,
+      link: "https://github.com/zakariDS/portfolio/blob/main/DS_pca.ipynb",
+      description:
+        "I used PCA to combine various factors that were used to measure transportation disadvantage into a one-dimensional factor that explained most of the variance in the data for, Honolulu, Hawaii Metropolitan Area.",
+    },
+    {
+      workImg: Classification,
+      name: "Classification",
+      index: "04",
+      link: "https://github.com/zakariDS/portfolio/blob/main/DS_classification.ipynb",
+      description:
+        "I used binary logistic regression, KNN, SVM, and Decision Trees to predict the likelihood of roadways being congested in St. Louis, Missouri Metropolitan Area.",
+    },
+    {
+      workImg: Impact,
+      name: "Impact Analysis",
+      index: "05",
+      link: "https://github.com/zakariDS/portfolio/blob/main/IA_impact.ipynb",
+      description:
+        "I employed Bayesian Structural Time-Series (BSTS) model to assess the impact of work zones on urban freeway traffic congestion.",
+    },
+    {
+      workImg: Markov,
+      name: "Conjestion Transition ",
+      index: "06",
+      link: "https://github.com/zakariDS/portfolio/blob/main/TA_congestion_transition.ipynb",
+      description:
+        "I used Markov chain model to analyze the transition from one state of urban traffic congestion to another. ",
     },
   ];
 
@@ -97,8 +94,11 @@ function Portfolio() {
                   <p className="my-10 text-center text-2xl font-bold ">
                     {work.name}
                   </p>
+                  <div className="text-center text-gray-400 description">
+                    <p> {work.description}</p>
+                  </div>
                   <div className="desc">
-                    <a href={work.github} target="_blank">
+                    <a href={work.link} target="_blank">
                       <button>View Project</button>
                     </a>
                   </div>
