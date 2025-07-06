@@ -4,7 +4,7 @@ import { gsap } from "gsap";
 import "./Styles/hero.scss";
 import Me from "../assets/zak-mumuni.jpg";
 import { Link } from "react-scroll";
-import Resume from "../assets/zak-mumuni-resume.pdf"; // Adjust the path as necessary
+import Resume from "../assets/ZAK MUMUNI RESUME.pdf"; // Adjust the path as necessary
 import Text from "./Text";
 import ResumeModal from "./ResumeModal";
 
