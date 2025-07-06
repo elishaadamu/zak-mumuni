@@ -28,7 +28,7 @@ function Navbar() {
             smooth={true}
             duration={500}
           >
-            E<span>A.</span>
+            Z<span>M.</span>
           </Link>
 
           <div className="svg">
@@ -82,17 +82,7 @@ function Navbar() {
               portfolio
             </Link>
           </li>
-          <li>
-            <Link
-              to="testimonials"
-              onClick={() => setViewMenu(false)}
-              offset={-80}
-              smooth={true}
-              duration={500}
-            >
-              testimonials
-            </Link>
-          </li>
+
           <li>
             <Link
               to="contact"

@@ -8,7 +8,7 @@ import Gmail from "../assets/skills/gmail.svg";
 function Contact() {
   return (
     <div>
-      <div className="footer">
+      <div className="footer" id="contact">
         <h1 className="text-4xl  text-center mb-10 text-slate-200 connect">
           {" "}
           Connect with Me
