@@ -16,14 +16,14 @@ function Contact() {
         <div className="flex flex-wrap social-footer gap-10">
           <a
             className="text-4xl"
-            href="#"
+            href="https://github.com/zakariDS"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
           <a
-            href="https://github.com/zakariDS"
+            href="#"
             target="_blank"
             className="text-4xl"
             rel="noopener noreferrer"
