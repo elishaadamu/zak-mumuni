@@ -1,9 +1,6 @@
 .about {
-  display: grid;
-  place-content: center;
-  min-height: 100vh;
-  min-height: 40svh;
-  margin: 0rem 0;
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 0 1rem;
 
   .container {
@@ -17,22 +14,26 @@
     }
 
     .my-info {
-      .my-img {
-        overflow: hidden;
-        height: 18rem;
-        border-radius: 1.3rem;
-        margin-bottom: 2rem;
-        position: sticky;
-        top: 5rem;
-        width: 100%;
-        z-index: -2;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      text-align: justify;
+      // .my-img {
+      //   overflow: hidden;
+      //   object-fit: contain;
+      //   border-radius: 1.3rem;
+      //   margin-bottom: 2rem;
+      //   position: sticky;
+      //   top: 5rem;
+      //   width: 100%;
+      //   z-index: -2;
 
-        img {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
+      //   img {
+      //     height: 100%;
+      //     width: 100%;
+      //     object-fit: cover;
+      //   }
+      // }
 
       .details {
         background: var(--bg-color);
@@ -60,7 +61,6 @@
       }
 
       .my-info {
-        display: flex;
         gap: 1rem;
       }
 
