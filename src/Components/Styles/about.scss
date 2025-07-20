@@ -2,8 +2,11 @@
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 1rem;
+  margin-top: 6rem;
 
   .container {
+    display: unset;
+    margin-top: 2rem;
     h2 {
       text-align: center;
       font-size: 2.4rem;
@@ -72,5 +75,11 @@
         width: 60% !important;
       }
     }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    margin-top: 0rem !important;
   }
 }
