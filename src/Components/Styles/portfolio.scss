@@ -1,15 +1,16 @@
 .portfolio {
   min-height: 60vh;
-  margin: 3rem auto; // Changed: added auto for horizontal centering
+  padding: 4rem 1rem; // Consistent padding
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
   opacity: 0;
-  width: 100%; // Added: ensure full width
-  max-width: 1280px; // Added: match other sections
-
   animation: fadeIn 0.8s ease-in forwards;
 
   .container {
-    width: 90%; // Added: constrain container width
-    margin: 0 auto; // Added: center container
+    width: 90%; // Consistent with other sections
+    max-width: 1200px;
+    margin: 0 auto;
 
     h2 {
       text-align: center;
@@ -24,8 +25,6 @@
       gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
-      justify-content: center;
-      padding: 0 1rem;
 
       .work {
         background: var(--dark-bg-color);

@@ -13,9 +13,10 @@
   overflow-y: auto;
 
   nav {
+    width: 90%; // Consistent with other sections
+    max-width: 1200px;
     margin: 0 auto;
     height: 100%;
-    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,7 +83,7 @@
 // MEDIAS
 
 @media screen and (max-width: 800px) {
-  nav {
+  .navbar nav {
     width: 90% !important;
   }
 }
@@ -105,7 +106,7 @@
   .navbar {
     height: 3.5rem;
     nav {
-      width: 80% !important;
+      width: 90% !important;
 
       .left {
         // background-color: rgb(11, 87, 125);

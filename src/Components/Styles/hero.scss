@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    max-width: 1200px; // Added: constrain container width
+    max-width: 1280px; // Added: constrain container width
 
     .left-col {
       transition: 0.7s;
@@ -96,7 +96,7 @@
       border-radius: 2rem;
       position: relative;
       top: 2rem;
-      right: -2rem;
+      right: 0rem;
 
       .container {
         border-radius: 2rem;
