@@ -1,11 +1,16 @@
 .portfolio {
   min-height: 60vh;
-  margin: 3rem 0;
+  margin: 3rem auto; // Changed: added auto for horizontal centering
   opacity: 0;
+  width: 100%; // Added: ensure full width
+  max-width: 1280px; // Added: match other sections
 
   animation: fadeIn 0.8s ease-in forwards;
 
   .container {
+    width: 90%; // Added: constrain container width
+    margin: 0 auto; // Added: center container
+
     h2 {
       text-align: center;
       font-size: 2.4rem;
